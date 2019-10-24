@@ -1,0 +1,92 @@
+#######################################
+# Syntax Coloring Map For ÖnÖffBTN driver
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+OnOffBTN_StatusRegister             KEYWORD1
+OnOffBTN_HardResetBehaviorRegister  KEYWORD1
+OnOffBTN_PowerBehaviorRegister      KEYWORD1
+OnOffBTN_RTCControlRegister         KEYWORD1
+OnOffBTN_DateTime                   KEYWORD1
+OnOffBTN_AlarmTime                  KEYWORD1
+OnOffBTN_AlarmDayDate               KEYWORD1
+HHTronik_OnOffBTN                   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin						        KEYWORD2
+clearFramebuffer		    		KEYWORD2
+setPixel				    		KEYWORD2
+setPixels				    		KEYWORD2
+getButtonStatus			    		KEYWORD2
+TriggerLatch			    		KEYWORD2
+TriggerReset			    		KEYWORD2
+getLongPressThreshold				KEYWORD2
+setLongPressThreshold				KEYWORD2
+getHardResetBehaviorConfiguration	KEYWORD2
+setHardResetBehaviorConfiguration	KEYWORD2
+getPowerOnResetConfiguration        KEYWORD2
+setPowerBehaviorConfiguration		KEYWORD2  
+getOnDelay	    					KEYWORD2
+setOnDelay		    				KEYWORD2
+getOffDelay			    			KEYWORD2
+setOffDelay				    		KEYWORD2
+selectAnimation						KEYWORD2
+getSelectedAnimation				KEYWORD2
+setAnimationSpeed			    	KEYWORD2  
+getAnimationSpeed					KEYWORD2
+setAnimationConfiguration		    KEYWORD2
+getAnimationConfiguration		    KEYWORD2
+saveAnimationFramebuffer			KEYWORD2
+clearStoredAnimationFramebuffer		KEYWORD2
+restoreStoredAnimationFramebuffer	KEYWORD2
+setFramebufferRestoreBehavior		KEYWORD2
+getUserEEPROMByte					KEYWORD2
+setUserEEPROMByte					KEYWORD2
+getRTCConfiguration					KEYWORD2
+setRTCConfiguration					KEYWORD2
+getDateTime						    KEYWORD2
+setDateTime						    KEYWORD2
+getAlarmTime						KEYWORD2
+setAlarmTime						KEYWORD2
+getAlarmDayDate						KEYWORD2
+setAlarmDayDate						KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+ONOFFBTN_DEFAULT_I2C_ADDRESS        LITERAL1 
+ONOFFBTN_NUM_PIXELS                 LITERAL1
+
+# OnOffBTN_DelayValue
+delay100ms                          LITERAL1
+delay1000ms                         LITERAL1
+delay5000ms                         LITERAL1
+delay10000ms                        LITERAL1
+
+# OnOffBTN_Animation
+Animation_None                      LITERAL1
+Animation_Breath                    LITERAL1
+Animation_Spinner                   LITERAL1
+Animation_Flash                     LITERAL1
+Animation_Flicker                   LITERAL1
+Animation_Spooky                    LITERAL1
+Animation_Rainbow                   LITERAL1
+Animation_LinearFade                LITERAL1
+
+# OnOffBTN_PowerState
+PowerOn                             LITERAL1
+PowerOff                            LITERAL1
+
+# OnOffBTN_RTCAlarmAction
+RTCAlarm_PowerOn                    LITERAL1
+RTCAlarm_PowerOff                   LITERAL1
+RTCAlarm_Reset                      LITERAL1
+RTCAlarm_Toggle                     LITERAL1
