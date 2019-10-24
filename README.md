@@ -3,6 +3,9 @@
 
 This is the Arduino driver for HHTronik's ÖnÖffBTN smart switch / HMI.
 
+> NOTE: the ÖnÖffBTN is not yet publicly available, we're working on the last details
+> for news follow @embedaddy on Instagram (https://www.instagram.com/embedaddy/)
+> or subscribe to the HHTronik newsletter on https://hhtronik.com
 
 <a href="https://www.hhtronik.com"><img src="assets/onoffbtn-picture.jpg" width="500"/></a>
 
@@ -192,6 +195,12 @@ void handleBtnInterrupt()
   interruptReceived = true;
 }
 ```
+
+Documentation
+-------------
+
+Please refer to `hhtronik_onoffbtn.h` for the list of methods and functions and their description.
+For details about configuration flags, possible values etc. please refer to the ÖnÖffBTN documentation (available soon).
 
 Compatibility
 -------------
