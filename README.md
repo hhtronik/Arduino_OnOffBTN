@@ -27,7 +27,7 @@ A typical flow might be:
 
 Here's the features list:
 
-- Load switch: 20mOhm MOSFET for up to 8A, 12V max.
+- Load switch: super low RDS(on) MOSFET for up to 8A load at 12V max.
 - Supply voltage: 3.3V - 13V
 - Configurable via I2C (Fast Mode / 400kHz)
 - Max. 4 Pins on host side (considering we already have a common ground)
@@ -199,3 +199,8 @@ The driver was successfully tested with:
 - Arduino Duemilanove
 - Arduino Mega 2560
 - Sparkfun Pro-Micro (ATmega32U4)
+
+Licence
+-------
+
+This software is licensed under the BSD licence, see LICENCE file for details.
