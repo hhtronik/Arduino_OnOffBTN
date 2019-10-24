@@ -3,6 +3,9 @@
 
 This is the Arduino driver for HHTronik's ÖnÖffBTN smart switch / HMI.
 
+
+<a href="https://www.hhtronik.com"><img src="assets/onoffbtn-picture.jpg" width="500"/></a>
+
 How to install
 --------------
 
