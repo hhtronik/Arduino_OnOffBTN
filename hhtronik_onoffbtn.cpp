@@ -112,7 +112,7 @@ HHTronik_OnOffBTN::setPixel(uint8_t pixel, uint8_t r, uint8_t g, uint8_t b)
     Wire.write(r); 
     Wire.write(g); 
     Wire.write(b); 
-    Wire.endTransmission();           
+    Wire.endTransmission();  
 }
 
 void 
@@ -148,6 +148,14 @@ HHTronik_OnOffBTN::getButtonStatus()
     };
 
     return result;
+}
+
+void
+HHTronik_OnOffBTN::SaveConfiguration( void )
+{
+    // SaveConfiguration bit on bit #5
+    uint8_t value = 1 << 4;
+    _i2c_writeByte(0x01, value);
 }
 
 void 

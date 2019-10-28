@@ -196,6 +196,16 @@ class HHTronik_OnOffBTN {
    * @returns struct OnOffBTN_StatusRegister 
    */
   OnOffBTN_StatusRegister getButtonStatus();
+
+
+  /**
+   * Persist the current configuration to EEPROM.
+   * 
+   * @note: this call takes up to 500ms to complete. If your hardware doesn't
+   * support I2C Clock Stretching, please insert some waiting time after calling
+   * this to ensure the next I2C transfert won't fail if it is too close.
+   */
+  void SaveConfiguration( void );
   
   /**
    * Toggle the button.
@@ -362,6 +372,10 @@ class HHTronik_OnOffBTN {
 
   /**
    * Write the RTC configuration
+   * 
+   * @note: this call takes up to 500ms to complete. If your hardware doesn't
+   * support I2C Clock Stretching, please insert some waiting time after calling
+   * this to ensure the next I2C transfert won't fail if it is too close.
    */
   void setRTCConfiguration(OnOffBTN_RTCControlRegister configuration);
 
