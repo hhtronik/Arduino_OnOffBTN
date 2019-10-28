@@ -116,7 +116,7 @@ HHTronik_OnOffBTN::setPixel(uint8_t pixel, uint8_t r, uint8_t g, uint8_t b)
 }
 
 void 
-HHTronik_OnOffBTN::setPixels(const uint8_t *subpixel, const uint8_t length, const uint8_t offset = 0)
+HHTronik_OnOffBTN::setPixels(const uint8_t *subpixel, const uint8_t length, const uint8_t offset)
 {
     if(offset > ONOFFBTN_NUM_PIXELS) return;
     
@@ -198,7 +198,7 @@ HHTronik_OnOffBTN::getHardResetBehaviorConfiguration( void )
     result.DisableHardReset         = (bool)((regValue & 1)   >> 0); // mask 0b00000001
     result.HardResetHoldDuration    =       ((regValue & 30)  >> 1); // mask 0b00011110
     result.AutoRestartAfterReset    = (bool)((regValue & 32)  >> 5); // mask 0b00100000
-    result.AutoRestartDelay         =       ((regValue & 192) >> 6); // mask 0b11000000
+    result.AutoRestartDelay         = (OnOffBTN_DelayValue)((regValue & 192) >> 6); // mask 0b11000000
 
     return result;
 }
